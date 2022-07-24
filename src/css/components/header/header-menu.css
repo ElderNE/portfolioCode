@@ -1,0 +1,52 @@
+@keyframes openWindow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    animation-name: openWindow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.header-menu:target {
+    z-index: 6;
+    display: flex;
+}
+
+
+.header-navigation {
+    width: 200px;
+    height: 200px;
+    border: solid 15px #48484A;
+}
+
+.header-navigation__nonDecorate {
+    list-style-type: none;
+}
+
+.header-navigationText {
+    font-size: 30px;
+    text-decoration: none;
+    color: #48484A;
+    margin: 0 0 0 13px;
+}

@@ -1,0 +1,33 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+.header-buttonClose {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    border-radius: 50%;
+    border: solid 2px #48484A;
+    z-index: 7;
+}
+
+.header-buttonClose::after {
+    content: "\2716";
+    font-size: 20px;
+    color: #48484A;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+}
+.header-buttonClose:hover {
+    animation: rotate;
+    animation-duration: 1s;
+}

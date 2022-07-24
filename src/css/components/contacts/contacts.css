@@ -1,0 +1,57 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+}
+
+.contacts-email {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #A6B4CF;
+    position: relative;
+}
+
+.contacts-email:hover {
+    outline: 2px solid #A6B4CF;
+    cursor: pointer;
+}
+
+.contacts-email::after {
+    content: "\2709";
+    font-size: 50px;
+    color: #0F1521;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.contacts-social {
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.contacts-img:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts-email::before {
+    content: "send email";
+    font-size: 20px;
+    color: #0F1521;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
